@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote Board - Mood Board Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar with tools -->
+    <aside class="toolbar">
+      <h2>Mood Board Maker</h2>
+      <p class="subtitle">Pinterest Inspired</p>
+      
+      <button id="addTextBtn" class="btn">+ Add Text</button>
+      <button id="addImageBtn" class="btn">+ Add Image</button>
+      <input type="file" id="imageUpload" accept="image/*" hidden>
+      
+      <h3>Colors</h3>
+      <div class="colors">
+        <div class="swatch" data-color="#FFC0CB"></div>
+        <div class="swatch" data-color="#87CEEB"></div>
+        <div class="swatch" data-color="#98FB98"></div>
+        <div class="swatch" data-color="#F0E68C"></div>
+      </div>
+
+      <button id="saveBtn" class="btn btn-dark">Save to Library</button>
+      <a href="library.html" class="btn" style="background:#2196F3; text-align:center; text-decoration:none; display:block;">View Library</a>
+      <button id="clearBtn" class="btn btn-red">Clear Board</button>
+    </aside>
+
+    <!-- Main board -->
+    <div class="board-wrapper">
+      <div class="board-header">
+        <h1 id="boardTitle" contenteditable="true">My Mood Board</h1>
+      </div>
+      <div id="board" class="board"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
